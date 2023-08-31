@@ -25,8 +25,8 @@ public class FiddlerSignController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Starting Fiddler Hero");
-        StartCoroutine(StartFiddlerHero() );
-        
+        StartCoroutine( StartFiddlerHero() );
+
     }
 
     private IEnumerator StartFiddlerHero()
