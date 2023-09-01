@@ -72,6 +72,9 @@
     <Compile Include="Assets/Scripts/ButtonBehavior.cs" />
     <Compile Include="Assets/Scripts/PlayMusic.cs" />
     <Compile Include="Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs" />
+    <Compile Include="Assets/Scripts/SceneLoader.cs" />
+    <Compile Include="Assets/WebViewSample/Assets/Scripts/SampleWebView.cs" />
+    <Compile Include="Assets/WebViewSample/Assets/Scripts/SampleCustomHeader.cs" />
     <Compile Include="Assets/Scripts/NameDisplayer.cs" />
     <Compile Include="Assets/Scripts/FiddlerSignController.cs" />
     <Compile Include="Assets/Scripts/NameSetter.cs" />
@@ -359,14 +362,14 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="FishNet.CodeAnalysis">
+      <HintPath>Assets/FishNet/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll</HintPath>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library/PackageCache/com.unity.testtools.codecoverage@1.2.3/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="FishNet.CodeAnalysis">
-      <HintPath>Assets/FishNet/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -752,9 +755,6 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
@@ -766,6 +766,9 @@
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
@@ -785,9 +788,6 @@
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -796,6 +796,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>

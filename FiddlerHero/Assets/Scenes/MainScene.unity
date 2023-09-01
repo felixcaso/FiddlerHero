@@ -723,7 +723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &935496082
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1280,7 +1280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2d0b0987c1184ef38568a4daa542c22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2d0b0987c1184ef38568a4daa542c22, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1338,6 +1338,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c2d0b0987c1184ef38568a4daa542c22, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1539774597}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c2d0b0987c1184ef38568a4daa542c22, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1539774603}
   m_SourcePrefab: {fileID: 100100000, guid: c2d0b0987c1184ef38568a4daa542c22, type: 3}
 --- !u!1 &1539774594 stripped
 GameObject:
@@ -1363,7 +1366,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.06, y: 0.06, z: 0.003964158}
+  m_Size: {x: 0.06, y: 0.085, z: 0.003964158}
   m_Center: {x: -0.000024225796, y: 0.00003517378, z: 0.0019821562}
 --- !u!82 &1539774596
 AudioSource:
@@ -1386,7 +1389,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 30
+  MaxDistance: 40
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -1396,58 +1399,67 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.11545995
-      value: 1.0571442
-      inSlope: -30.011993
-      outSlope: -30.011993
+      time: 0.025
+      value: 1
+      inSlope: -40.015934
+      outSlope: -40.015934
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.14879328
-      value: 0.55714417
-      inSlope: -7.5029984
-      outSlope: -7.5029984
+      time: 0.05
+      value: 0.5
+      inSlope: -10.0039835
+      outSlope: -10.0039835
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.21545996
-      value: 0.30714417
-      inSlope: -1.8757496
-      outSlope: -1.8757496
+      time: 0.1
+      value: 0.25
+      inSlope: -2.5009959
+      outSlope: -2.5009959
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.3487933
-      value: 0.18214417
-      inSlope: -0.4689374
-      outSlope: -0.4689374
+      time: 0.2
+      value: 0.125
+      inSlope: -0.62524897
+      outSlope: -0.62524897
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.53333336
+      time: 0.4
       value: 0.0625
-      inSlope: -0.11723435
-      outSlope: -0.11723435
+      inSlope: -0.15631224
+      outSlope: -0.15631224
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0.033333335
-      inSlope: -0.033346657
-      outSlope: -0.033346657
+      time: 0.8
+      value: 0.03125
+      inSlope: -0.03907806
+      outSlope: -0.03907806
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.97584534
+      value: 0
+      inSlope: 0.058690652
+      outSlope: 0.058690652
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1514,6 +1526,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c2d0b0987c1184ef38568a4daa542c22, type: 3}
   m_PrefabInstance: {fileID: 1539774593}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1539774603
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539774594}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1688067896
 PrefabInstance:
   m_ObjectHideFlags: 0

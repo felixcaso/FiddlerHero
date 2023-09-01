@@ -24,7 +24,7 @@ public class FiddlerSignController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Starting Fiddler Hero");
+        Debug.Log("Starting Fiddler Hero in "+WAIT_TIME+" secs");
         StartCoroutine( StartFiddlerHero() );
 
     }
@@ -34,6 +34,7 @@ public class FiddlerSignController : MonoBehaviour
         yield return new WaitForSeconds(WAIT_TIME);
 
         SceneManager.LoadSceneAsync("FiddlerHero");
+        
     }
 
 

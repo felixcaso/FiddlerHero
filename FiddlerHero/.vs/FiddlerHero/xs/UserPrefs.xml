@@ -2,14 +2,16 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FiddlerSignController.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="23" Column="9" />
-      <File FileName="Assets/Scripts/PlayerAnimation.cs" Line="11" Column="45" />
-      <File FileName="Assets/Scripts/PlayMusic.cs" Line="9" Column="18" />
-      <File FileName="Assets/Scripts/FiddlerSignController.cs" Line="28" Column="48" />
+      <File FileName="Assets/Scripts/PlayerAnimation.cs" />
+      <File FileName="Assets/Scripts/PlayMusic.cs" Line="14" Column="23" />
+      <File FileName="Assets/Scripts/FiddlerSignController.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0e35063e-88d9-45b8-8a50-4a80395ec569" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bd1071f4-c4b0-400e-aa02-6861c8ec5802" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

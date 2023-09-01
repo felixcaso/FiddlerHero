@@ -11,12 +11,15 @@ public class PlayMusic : MonoBehaviour
     {
         music = GetComponent<AudioSource>();
         music.PlayDelayed(2f);
+        music.Pause();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!music.isPlaying)
+        if (!music.isPlaying) {
             music.Play();
+        }
+            
     }
 
     private void OnTriggerExit(Collider other)

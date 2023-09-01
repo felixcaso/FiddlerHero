@@ -379,9 +379,12 @@
 "Assets/Scripts/PlayerNameTracker.cs"
 "Assets/Scripts/PlayMusic.cs"
 "Assets/Scripts/RandomPlacement.cs"
+"Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/ServerSpawnObjects.cs"
 "Assets/Scripts/SetName.cs"
 "Assets/Scripts/UIController.cs"
+"Assets/WebViewSample/Assets/Scripts/SampleCustomHeader.cs"
+"Assets/WebViewSample/Assets/Scripts/SampleWebView.cs"
 -langversion:9.0
 
 /deterministic
