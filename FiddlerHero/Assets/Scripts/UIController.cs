@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
-    private GameObject welcomeTxt;
-    private GameObject nameInput;
+    private GameObject welcomeObj;
+    private GameObject leaderboardObj;
+
+
+
+
 
     
 }

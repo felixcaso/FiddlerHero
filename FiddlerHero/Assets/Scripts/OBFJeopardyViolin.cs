@@ -28,6 +28,7 @@ public class OBFJeopardyViolin : MonoBehaviour
             isReady = false;
             Application.OpenURL(JEOPARDY_URL);
         }
+
         StartCoroutine( SetReady() );
 
 

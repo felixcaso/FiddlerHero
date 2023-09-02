@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{F5A629DA-5CB2-711D-2551-67730950C4A7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NPC.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NPCPlayViolin.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="27" Column="86" />
       <File FileName="Assets/Scripts/PlayerAnimation.cs" />
@@ -8,9 +8,11 @@
       <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/SceneLoader.cs" Line="11" Column="1" />
       <File FileName="Assets/Scripts/Rotate.cs" Line="13" Column="41" />
-      <File FileName="Assets/Scripts/OBFJeopardyViolin.cs" Line="21" Column="52" />
+      <File FileName="Assets/Scripts/OBFJeopardyViolin.cs" Line="31" Column="1" />
       <File FileName="Assets/NPCPlayViolin.cs" Line="17" Column="1" />
-      <File FileName="Assets/Scripts/NPC.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/NPC.cs" Line="11" Column="10" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMoveTouch.cs" Line="9" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
