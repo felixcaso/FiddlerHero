@@ -65,6 +65,7 @@
     <Compile Include="Assets/Scripts/PlayerAnimation.cs" />
     <Compile Include="Assets/Scripts/RandomPlacement.cs" />
     <Compile Include="Assets/Scripts/PlayerNameTracker.cs" />
+    <Compile Include="Assets/Scripts/OBFJeopardyViolin.cs" />
     <Compile Include="Assets/Scripts/NoteObjects.cs" />
     <Compile Include="Assets/Scripts/UIController.cs" />
     <Compile Include="Assets/Scripts/ServerSpawnObjects.cs" />
@@ -73,13 +74,13 @@
     <Compile Include="Assets/Scripts/PlayMusic.cs" />
     <Compile Include="Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs" />
     <Compile Include="Assets/Scripts/SceneLoader.cs" />
-    <Compile Include="Assets/WebViewSample/Assets/Scripts/SampleWebView.cs" />
-    <Compile Include="Assets/WebViewSample/Assets/Scripts/SampleCustomHeader.cs" />
     <Compile Include="Assets/Scripts/NameDisplayer.cs" />
+    <Compile Include="Assets/Scripts/Rotate.cs" />
     <Compile Include="Assets/Scripts/FiddlerSignController.cs" />
     <Compile Include="Assets/Scripts/NameSetter.cs" />
     <Compile Include="Assets/FishNet/Upgrading/MirrorUpgrade.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
+    <Compile Include="Assets/NPCPlayViolin.cs" />
     <Compile Include="Assets/Scripts/SetName.cs" />
   </ItemGroup>
   <ItemGroup>
