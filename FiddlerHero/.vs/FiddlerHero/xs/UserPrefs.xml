@@ -1,13 +1,5 @@
 ﻿<Properties StartupConfiguration="{F5A629DA-5CB2-711D-2551-67730950C4A7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FishNet/Runtime/Generated/Component/Spawning/PlayerSpawner.cs">
-    <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="7" Column="23" />
-      <File FileName="Assets/Scripts/PlayerAnimation.cs" Line="14" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMoveTouch.cs" />
-      <File FileName="Assets/CameraController.cs" Line="30" Column="5" />
-      <File FileName="Assets/FishNet/Runtime/Generated/Component/Spawning/PlayerSpawner.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="383eb193-85fb-4990-97fc-c012814a109d" />
