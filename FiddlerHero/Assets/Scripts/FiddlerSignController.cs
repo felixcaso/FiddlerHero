@@ -22,8 +22,8 @@ public class FiddlerSignController : MonoBehaviour
     {
         yield return new WaitForSeconds(WAIT_TIME);
 
-        //SceneManager.LoadSceneAsync("FiddlerHero");
-        Application.OpenURL("http://unity3d.com/");
+        SceneManager.LoadSceneAsync("FiddlerHero");
+        
 
     }
 

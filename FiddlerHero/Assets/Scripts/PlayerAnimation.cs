@@ -12,25 +12,8 @@ public class PlayerAnimation : MonoBehaviour
     }
 
 
-    public void SprintForward(bool sprint)
+    public void Sprint(bool sprint)
     {
-        animator.SetBool("SprintF", sprint);
+        animator.SetBool("Sprint", sprint);
     }
-
-    public void SprintBackward(bool sprint)
-    {
-        animator.SetBool("SprintB", sprint);
-    }
-
-    public void Jump()
-    {
-        animator.SetTrigger("Jump");
-    }
-
-    public void PlayViolin()
-    {
-        animator.SetTrigger("Play");
-    }
-
-    
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float moveSpeed = 10f;
-    private float rotateSpeed = 150f;
+    public float moveSpeed = 10f;
+    public float rotateSpeed = 150f;
     private CharacterController characterController;
     private PlayerAnimation playerAnimation;
 
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 offset = new Vector3(horizontal, Physics.gravity.y, vertical) * (moveSpeed * Time.deltaTime);
         offset = transform.TransformDirection(offset);
-        //characterController.Move(offset);
+        characterController.Move(offset);
 
         //Check for movement
         if (horizontal != 0f || vertical != 0f)
@@ -39,34 +39,19 @@ public class PlayerMovement : MonoBehaviour
 
             if (vertical < 0)// if down
             {
-                playerAnimation.SprintBackward(true);
+                playerAnimation.Sprint(false);
 
             }
 
             else // if up
             {
-                playerAnimation.SprintForward(true);
+                playerAnimation.Sprint(true);
             }
         }
         else
         {
-            playerAnimation.SprintBackward(false);
-            playerAnimation.SprintForward(false);
+            playerAnimation.Sprint(false);
         }
-
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    playerAnimation.PlayViolin();
-        //}
-
-        //if(Input.GetKeyDown(KeyCode.Alpha1))
-        //    playerAnimation.StartDance("Dance1");
-        //if (Input.GetKeyDown(KeyCode.Alpha2))
-        //    playerAnimation.StartDance("Dance2");
-
-
-        
-
     }//end update
 
     

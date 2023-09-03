@@ -1,23 +1,16 @@
 ﻿<Properties StartupConfiguration="{F5A629DA-5CB2-711D-2551-67730950C4A7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NPCPlayViolin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FishNet/Runtime/Generated/Component/Spawning/PlayerSpawner.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="27" Column="86" />
-      <File FileName="Assets/Scripts/PlayerAnimation.cs" />
-      <File FileName="Assets/Scripts/PlayMusic.cs" Line="14" Column="23" />
-      <File FileName="Assets/Scripts/FiddlerSignController.cs" Line="28" Column="6" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SceneLoader.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/Rotate.cs" Line="13" Column="41" />
-      <File FileName="Assets/Scripts/OBFJeopardyViolin.cs" Line="31" Column="1" />
-      <File FileName="Assets/NPCPlayViolin.cs" Line="17" Column="1" />
-      <File FileName="Assets/Scripts/NPC.cs" Line="11" Column="10" />
-      <File FileName="Assets/Scripts/UIController.cs" Line="10" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMoveTouch.cs" Line="9" Column="32" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="7" Column="23" />
+      <File FileName="Assets/Scripts/PlayerAnimation.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMoveTouch.cs" />
+      <File FileName="Assets/CameraController.cs" Line="30" Column="5" />
+      <File FileName="Assets/FishNet/Runtime/Generated/Component/Spawning/PlayerSpawner.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bd1071f4-c4b0-400e-aa02-6861c8ec5802" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="383eb193-85fb-4990-97fc-c012814a109d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

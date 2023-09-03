@@ -63,6 +63,7 @@
     <Compile Include="Assets/Scripts/BeatScroller.cs" />
     <Compile Include="Assets/Scripts/NPC.cs" />
     <Compile Include="Assets/Scripts/PlayerAnimation.cs" />
+    <Compile Include="Assets/CameraController.cs" />
     <Compile Include="Assets/Scripts/RandomPlacement.cs" />
     <Compile Include="Assets/Scripts/Leaderboard.cs" />
     <Compile Include="Assets/Scripts/PlayerNameTracker.cs" />
@@ -75,14 +76,15 @@
     <Compile Include="Assets/Scripts/PlayMusic.cs" />
     <Compile Include="Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs" />
     <Compile Include="Assets/Scripts/SceneLoader.cs" />
+    <Compile Include="Assets/Scripts/PlayerController.cs" />
     <Compile Include="Assets/Scripts/PlayerMoveTouch.cs" />
     <Compile Include="Assets/Scripts/NameDisplayer.cs" />
+    <Compile Include="Assets/Scripts/PlayerControls.cs" />
     <Compile Include="Assets/Scripts/Rotate.cs" />
     <Compile Include="Assets/Scripts/FiddlerSignController.cs" />
     <Compile Include="Assets/Scripts/NameSetter.cs" />
     <Compile Include="Assets/FishNet/Upgrading/MirrorUpgrade.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
-    <Compile Include="Assets/NPCPlayViolin.cs" />
     <Compile Include="Assets/Scripts/SetName.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -737,35 +739,14 @@
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.0f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -776,20 +757,50 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -800,21 +811,22 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    <Reference Include="Cinemachine">
+      <HintPath>Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="GameKit.Dependencies.csproj">
-      <Project>{7C4B6AD4-432B-09EC-1A39-529F05AEF514}</Project>
-      <Name>GameKit.Dependencies</Name>
-    </ProjectReference>
     <ProjectReference Include="FishNet.Runtime.csproj">
       <Project>{F16A3CF7-41B8-B3BD-3590-8FE99BE2334C}</Project>
       <Name>FishNet.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="GameKit.Utilities.csproj">
+      <Project>{53166703-6CEF-92CE-CE89-B9B3BB1A17D7}</Project>
+      <Name>GameKit.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="GameKit.Dependencies.csproj">
+      <Project>{7C4B6AD4-432B-09EC-1A39-529F05AEF514}</Project>
+      <Name>GameKit.Dependencies</Name>
     </ProjectReference>
     <ProjectReference Include="FishNet.Codegen.Cecil.csproj">
       <Project>{9D6F02E0-E30D-EB3F-1EEA-62EC8AFF9E12}</Project>
@@ -823,10 +835,6 @@
     <ProjectReference Include="FishNet.Demos.csproj">
       <Project>{EAFC5BC6-75F5-58AB-6609-B5A80A2C67DF}</Project>
       <Name>FishNet.Demos</Name>
-    </ProjectReference>
-    <ProjectReference Include="GameKit.Utilities.csproj">
-      <Project>{53166703-6CEF-92CE-CE89-B9B3BB1A17D7}</Project>
-      <Name>GameKit.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
