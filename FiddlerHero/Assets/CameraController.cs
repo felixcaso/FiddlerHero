@@ -4,28 +4,21 @@ using UnityEngine;
 using FishNet.Object;
 using Cinemachine;
 
-public class CameraController : NetworkBehaviour
+public class CameraController : MonoBehaviour
 {
-    public override void OnStartClient()
+    private void Awake()
     {
-        base.OnStartClient();
-        if (base.IsOwner)
-        {
-            Camera cam = Camera.main;
-            if(cam.tag != "MainCamera")
-            {
-                Debug.Log("No camera found");
-            }
-            else
-            {
-                Debug.Log("found");
-            }
-            CinemachineVirtualCamera vc = cam.GetComponent<CinemachineVirtualCamera>();
-
-            vc.Follow = transform;
-            vc.LookAt = transform;
-
-        }
+        PlayerSpawnedNotifier.OnPlayerSpawned += PlayerSpawnedNotifier_OnSpawnedPlayer;
     }
-    
+
+    private void PlayerSpawnedNotifier_OnSpawnedPlayer(Transform playerObj)
+    {
+        CinemachineFreeLook cam = GetComponent<CinemachineFreeLook>();
+        cam.Follow = playerObj;
+        cam.LookAt = playerObj;
+    }
+
+
+
+
 }
