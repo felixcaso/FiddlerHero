@@ -47,12 +47,16 @@ public class PlayerController : MonoBehaviour
         move.y = 0f;
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-        // Changes the height position of the player.
-        if ( playerInput.actions["Jump"].triggered && groundedPlayer)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            anim.Play("Jump");
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            anim.Play("Dance");
         }
+        // Changes the height position of the player.
+        //if ( playerInput.actions["Jump"].triggered)
+        //{
+        //    anim.Play("Jump");
+        //    //playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        //}
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
