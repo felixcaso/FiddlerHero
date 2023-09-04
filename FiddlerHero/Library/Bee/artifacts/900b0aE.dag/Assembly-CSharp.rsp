@@ -372,6 +372,7 @@
 "Assets/CameraController.cs"
 "Assets/FishNet/Upgrading/MirrorUpgrade.cs"
 "Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs"
+"Assets/PlayerSpawnedNotifier.cs"
 "Assets/Scripts/BeatScroller.cs"
 "Assets/Scripts/ButtonBehavior.cs"
 "Assets/Scripts/EffectObject.cs"
