@@ -10,7 +10,7 @@ public class SoccerFieldController : MonoBehaviour
     private GameObject soccerDisplayTxt;
     
 
-    private Vector3 centerField = new Vector3(0f, 1, 0f);
+    
 
 
     private void OnTriggerEnter(Collider other)
@@ -29,7 +29,7 @@ public class SoccerFieldController : MonoBehaviour
     {
         if (other.tag == "Ball")
         {
-            other.transform.position = centerField;
+            other.transform.position = transform.position;
         }
 
         if (other.tag == "Player")

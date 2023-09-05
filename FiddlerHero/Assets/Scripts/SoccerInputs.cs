@@ -6,12 +6,8 @@ using FishNet.Object;
 public class SoccerInputs : NetworkBehaviour
 {
     [SerializeField]
-	private float kickForce = 10;
-    private Vector3 centerField = new Vector3(0f, 1, 0f);
-    private void Update()
-    {
-        
-    }
+	private float kickForce = 1;
+    
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {

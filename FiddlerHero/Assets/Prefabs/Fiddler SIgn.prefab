@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7536574068459333772}
   - component: {fileID: 264222492486095089}
   - component: {fileID: 2235581172655803218}
+  - component: {fileID: 1352239625680768982}
   m_Layer: 0
   m_Name: Fiddler SIgn
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!33 &286499628962278839
 MeshFilter:
@@ -141,16 +142,16 @@ MonoBehaviour:
   <ChildNetworkObjects>k__BackingField: []
   SerializedTransformProperties:
     Position: {x: 0, y: 3.5, z: 0}
-    Rotation: {x: 0, y: 0, z: 1, w: 0}
+    Rotation: {x: -0, y: -0, z: 1, w: 0}
     LocalScale: {x: 5, y: 5, z: 0.01}
   _isNetworked: 1
   _isGlobal: 0
   _initializeOrder: 0
   _defaultDespawnType: 0
   NetworkObserver: {fileID: 0}
-  <PrefabId>k__BackingField: 6
+  <PrefabId>k__BackingField: 0
   <SpawnableCollectionId>k__BackingField: 0
-  _scenePathHash: 89892767
+  _scenePathHash: 3820666604
   <SceneId>k__BackingField: 0
   <AssetPathHash>k__BackingField: 730506730799690361
 --- !u!114 &2235581172655803218
@@ -198,3 +199,15 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &1352239625680768982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132928639225114229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f919c037f579842c0abc7788981c6c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
