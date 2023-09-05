@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishNet.Runtime", "FishNet.Runtime.csproj", "{F16A3CF7-41B8-B3BD-3590-8FE99BE2334C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{488AFDF9-2F2F-6940-55E6-0B1770E61BAC}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F5A629DA-5CB2-711D-2551-67730950C4A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishNet.Codegen.Cecil", "FishNet.Codegen.Cecil.csproj", "{9D6F02E0-E30D-EB3F-1EEA-62EC8AFF9E12}"
@@ -25,6 +27,10 @@ Global
 		{F16A3CF7-41B8-B3BD-3590-8FE99BE2334C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F16A3CF7-41B8-B3BD-3590-8FE99BE2334C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F16A3CF7-41B8-B3BD-3590-8FE99BE2334C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488AFDF9-2F2F-6940-55E6-0B1770E61BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488AFDF9-2F2F-6940-55E6-0B1770E61BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488AFDF9-2F2F-6940-55E6-0B1770E61BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488AFDF9-2F2F-6940-55E6-0B1770E61BAC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
