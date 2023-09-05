@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{F5A629DA-5CB2-711D-2551-67730950C4A7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BoomboxController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SoccerBall.cs">
     <Files>
-      <File FileName="Assets/CameraController.cs" Line="16" Column="38" />
+      <File FileName="Assets/CameraController.cs" Line="18" Column="32" />
       <File FileName="Assets/Scripts/PlayerController.cs" Line="52" Column="32" />
-      <File FileName="Assets/SoccerBall.cs" Line="10" Column="58" />
-      <File FileName="Assets/SoccerBall.cs" Line="7" Column="5" />
-      <File FileName="Assets/ResetBall.cs" Line="32" Column="52" />
+      <File FileName="Assets/SoccerBall.cs" Line="9" Column="29" />
+      <File FileName="Assets/SoccerBall.cs" Line="13" Column="52" />
+      <File FileName="Assets/ResetBall.cs" Line="32" Column="59" />
       <File FileName="Assets/HomeGoal.cs" Line="19" Column="34" />
       <File FileName="Assets/AwayGoal.cs" Line="20" Column="52" />
-      <File FileName="Assets/Scripts/BoomboxController.cs" Line="8" Column="10" />
+      <File FileName="Assets/Scripts/BoomboxController.cs" Line="24" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
