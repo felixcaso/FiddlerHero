@@ -154,6 +154,9 @@ public class NetworkHudCanvases : MonoBehaviour
             OnClick_Server();
         if (!Application.isBatchMode && (_autoStartType == AutoStartType.Host || _autoStartType == AutoStartType.Client))
             OnClick_Client();
+
+        //uncomment this for server build only
+        //startServer();
     }
 
 
@@ -182,6 +185,20 @@ public class NetworkHudCanvases : MonoBehaviour
             c = _changingColor;
 
         img.color = c;
+    }
+
+    private void startServer()
+    {
+        if (_networkManager == null)
+            return;
+
+        if (_serverState != LocalConnectionState.Stopped)
+            _networkManager.ServerManager.StopConnection(true);
+        else
+            _networkManager.ServerManager.StartConnection();
+
+        DeselectButtons();
+        //answerButtons.gameObject.SetActive(false);
     }
 
 

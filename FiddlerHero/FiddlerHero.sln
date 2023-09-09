@@ -5,13 +5,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishNet.Runtime", "FishNet.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{488AFDF9-2F2F-6940-55E6-0B1770E61BAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F5A629DA-5CB2-711D-2551-67730950C4A7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishNet.Codegen.Cecil", "FishNet.Codegen.Cecil.csproj", "{9D6F02E0-E30D-EB3F-1EEA-62EC8AFF9E12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishNet.Demos", "FishNet.Demos.csproj", "{EAFC5BC6-75F5-58AB-6609-B5A80A2C67DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.FishNet.Codegen", "Unity.FishNet.Codegen.csproj", "{34C1F347-3CF9-5289-4EA2-A8922BD7078E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F5A629DA-5CB2-711D-2551-67730950C4A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.Utilities", "GameKit.Utilities.csproj", "{53166703-6CEF-92CE-CE89-B9B3BB1A17D7}"
 EndProject
@@ -31,10 +31,6 @@ Global
 		{488AFDF9-2F2F-6940-55E6-0B1770E61BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{488AFDF9-2F2F-6940-55E6-0B1770E61BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{488AFDF9-2F2F-6940-55E6-0B1770E61BAC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9D6F02E0-E30D-EB3F-1EEA-62EC8AFF9E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9D6F02E0-E30D-EB3F-1EEA-62EC8AFF9E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D6F02E0-E30D-EB3F-1EEA-62EC8AFF9E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,6 +43,10 @@ Global
 		{34C1F347-3CF9-5289-4EA2-A8922BD7078E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34C1F347-3CF9-5289-4EA2-A8922BD7078E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34C1F347-3CF9-5289-4EA2-A8922BD7078E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A629DA-5CB2-711D-2551-67730950C4A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{53166703-6CEF-92CE-CE89-B9B3BB1A17D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{53166703-6CEF-92CE-CE89-B9B3BB1A17D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53166703-6CEF-92CE-CE89-B9B3BB1A17D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
